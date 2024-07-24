@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import *
 from task4.views import *
+from task5.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +26,8 @@ urlpatterns = [
     path('class/', class_views),
     path('platform/', main_page),
     path('platform/shop/', shop_page),
-    path('platform/basket/', basket_page)
+    path('platform/basket/', basket_page),
+    path('django_register/', sign_up_by_django),
+    path('html_register/', sign_up_by_html)
 
 ]
