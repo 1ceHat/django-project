@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Получи игру в пару кликов!</title>
+</head>
+<body>
+    <h1>Игры</h1>
+    <p>
+        <ul>
+            {% for game in games %}
+            <li><p>
+                    {{game}} <button>Купить</button>
+                </p>
+            {% endfor %}
+        </ul>
+    </p>
+    <p>
+        <a href="../platform"><button> Вернуться на главную</button></a>
+        <a href="../busket"><button>Перейти в корзину</button></a>
+    </p>
+</body>
+</html>
