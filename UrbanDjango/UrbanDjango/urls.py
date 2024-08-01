@@ -23,7 +23,7 @@ from task5.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('functions/', func_views),
-    path('class/', class_views),
+    path('class/', ClassViews.as_view()),
     path('platform/', main_page),
     path('platform/shop/', shop_page),
     path('platform/basket/', basket_page),
